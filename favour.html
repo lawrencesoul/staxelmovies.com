@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+    <title>movies website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+<html lang="en">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #cccc;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position:absolute;
+            width: 100%;
+        }
+            
+
+        
+        .navbar{
+            height: 70px;
+            width: 100%;
+            position: fixed;
+            top: -5px; 
+            left: 0px;
+            right: 100%;
+            background-color: white;
+            z-index: 9999;
+        }
+        .navbar a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-size: small;
+            padding: 0 5px;
+            position: relative;
+            top: -85px;
+            left: 1000px;
+            color: black;
+        }
+        .navbar a:hover{
+            color:rgb(4, 103, 121);
+            background: transparent;
+            
+            height: 20px;
+            border-bottom:rgb(4, 103, 121) 2px solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0px;
+
+        }
+        .navbar img{
+            height: 40px;
+            position: relative;
+            top: 10px;
+            left: 50.5px;
+        }
+        .navbar h1{
+            
+            color:rgb(131, 131, 133);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            left: 90px;
+            position: relative;
+            top: -45px;
+
+
+        }
+        u{
+            color:rgb(131, 131, 133) ;
+        }
+        
+
+    
+.box{
+        height: 400px;
+        width: 100%;
+        background-color: hsl(240, 20%, 18%);
+        position: relative;
+        border-top: aqua 2px solid;
+    
+
+    }
+    .box1{height: 280px;
+        width: 280px;
+        background-color: rgb(51, 48, 48);
+        position: relative;
+    left: 70px;
+    top: 30px;
+    border-radius: 10px;
+    }
+    .box1 h1{
+        color: white;
+        position: relative;
+        top:5px;
+        
+    }
+    .box1 a{color: black;
+background: white;
+border-radius: 50px;
+padding: 5px 6px;
+position: relative;
+left: 120px;
+
+    }
+    .box1 a:hover{
+        color: white;
+        background-color:black;       
+    }
+.box1 h5{
+    color: white;
+    position: relative;
+    top: -12px;
+}
+.box hr{
+    position: relative;
+    top: 15px;
+}
+
+.box2{
+
+    height: 280px;
+        width: 280px;
+        background-color: rgb(51, 48, 48);
+        position: relative;
+    left: 550px;
+    top: -270px;
+    border-radius: 10px;
+}
+.box2 h1{
+    color: white;
+    position: relative;
+    top: 5px;
+     
+}
+.box2 a{text-decoration: none;
+    padding-bottom: 0 5px;
+    position: relative;
+    color: white;}
+    .box2 a:hover{
+        color: white;
+        background: transparent;
+        border-right: none;
+        border-top: none;
+        border-left: none;
+        border-bottom: white 1.5px solid;
+    }
+
+
+.box2 li{
+    list-style: none;
+}
+
+.box3{
+    height: 280px;
+        width: 280px;
+        background-color:  rgb(51, 48, 48);
+        position: relative;
+    left: 1000px;
+    top: -570px;
+    border-radius: 10px;
+}
+.box3 h1{
+color: white;
+
+}
+.box3 a{
+    color: black;
+    background: white;
+    padding: 0 8px;
+    border-radius: 50px;
+    padding: 3px 8px;
+    position: relative;
+    left: 14px;
+}
+.box3 a:hover{
+    color: white;
+    background: black;
+}
+
+.box4{
+    height: 55px;
+        width: 100%;
+        background-color: hsl(240, 20%, 12%);
+        position: relative;
+    top: -545px;
+}
+.box4 h4{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    position: relative;
+    top: 15px;
+}
+.fav{
+        height: 500px;
+        width: 100%;
+        background-color: rgb(86, 89, 109);
+        position: relative;
+        top: 55px;
+
+    }
+    .fav h3{
+        color: white;
+        position: relative;
+        top: 30px;
+        border-radius: 10px;
+       
+    }
+    .fav1{height: 400px;
+        width: 370px;
+        background-color: transparent;
+        position: relative;
+    left: 70px;
+    top: 40px;
+    border-radius: 10px;
+    border: aqua 2px solid;
+    }
+.fav1 img{
+
+    position: relative;
+    height: 150px;
+    width: 88px;
+    transition: 1s;
+}
+.fav1 img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1); 
+}
+.fav1 h4{
+    color: white;
+    
+    border-radius: 3px;
+    border: aqua 2px solid;
+    padding: 2px 5px;
+    width: 50%;
+}
+.fav2{
+
+    height: 400px;
+        width: 370px;
+        background-color:transparent;
+        position: relative;
+    left: 480px;
+    top: -364px;
+    border-radius: 10px;
+    border: aqua 2px solid;
+}
+.fav2  h4{
+    color: white;
+    background-color: ;
+    border-radius: 3px;
+    border: aqua 2px solid;
+    padding: 2px 5px;
+    width: 80%;
+}
+.fav2 img{
+    
+    position: relative;
+
+    transition: 1s;
+    height: 150px;
+    width: 88px;
+}
+.fav2 img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1); }
+.fav3{
+    height: 400px;
+        width: 370px;
+        background-color: transparent;
+        position: relative;
+    left: 892px;
+    top:-770px;
+    border: aqua 2px solid;
+    border-radius: 10px;
+}
+.fav3 h4{
+    color: white;
+    background-color: ;
+    border-radius: 3px;
+    border: aqua 2px solid;
+    padding: 2px 5px;
+    width: 50%;
+}
+.fav3 img{
+    
+    position: relative;
+    height: 150px;
+    width: 88px;
+    transition: 1s;
+}
+.fav3 img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1); }
+
+
+    </style>
+<head>
+    
+    <div class="navbar">
+        <img src="logo.jfif" alt="">
+       <u> <h1>Staxel movies</h1></u>
+        <a href="index.html">home  </a>
+        <a href="genre.html">genre  </a>
+        <a href="favour.html">favourites  </a>
+        
+    </div>
+</head>
+<body>
+        
+             <div class="fav">
+                <center><h3>Favourites</h3></center>
+         <div class="fav1">
+        <a href="htpps://https://youtu.be/xslBF7JfhDo?si=mcbWhMqXausoNVba"> <img src="syfi.jfif" alt=""> <img src="syfi.jfif" alt=""> <img src="syfi.jfif" alt=""> <img src="syfi.jfif" alt="">
+         <img src="syfi.jfif" alt=""> <img src="syfi.jfif" alt=""> <img src="syfi.jfif" alt=""> <img src="syfi.jfif" alt=""></a>>
+         <center><h4>Action movies</h4></center>
+        
+         </div>
+         <div class="fav2">
+          <a href="https://youtu.be/TmpTDQ6g1KM?si=zgZzQ5IkaSGQTfnA"> <img src="adve.jfif" alt="">  <img src="adve.jfif" alt="">  <img src="adve.jfif" alt="">   <img src="adve.jfif" alt="">
+            <img src="adve.jfif" alt="">  <img src="adve.jfif" alt="">  <img src="adve.jfif" alt="">   <img src="adve.jfif" alt=""></a>
+<center><h4>science-friction movies</h4></center>
+
+         </div>
+         <div class="fav3">
+           <a href="https://https://youtu.be/sV91xFKGHt8?si=CCx3zWrpq8hQOttB"> <img src="adve.jfif" alt=""> <img src="adv.jfif" alt=""> <img src="adv2.jfif"> <img src="download (2).jfif" alt="">
+            <img src="adve.jfif" alt=""> <img src="adv.jfif" alt=""> <img src="adv2.jfif"> <img src="download (2).jfif" alt=""></a>
+            <center><h4>Adventures</h4></center>
+         </div>
+             </div>
+    </div>
+   
+        
+       
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+        <div class="box">
+            <div class="box1">
+            <center><h1>Contact Us</h1></center>
+            <a href="tel://+256 780809229"> <i class="fa-solid fa-phone"></i></a><h5 class="phone"><centre>Phone|</b>+256 780809229</h5></centre>
+            <a href=""> <i class="fa-solid fa-envelope"></i></a><h5 class="email" ><centre><b>Email|</b>Soulmovies@gmail.com</h5></centre>
+            <a href=""> <i class="fa-brands fa-square-whatsapp"></i></a><h5 class="email" ><centre><b>Whatsapp|</b>+256 780809229</h5></centre>
+            </div>
+            <div class="box2">
+           <center><h1>Quick Links</h1></center>
+           <center> <li><a href="index.html">Home</a></li>
+           <br>
+            <li><a href="genre.html">Genre</a></li>
+            <br>
+            <li><a href="favour.html">Favourites</a></li>
+            <br>
+            
+            </div>
+            <div class="box3">
+            <center><h1>Follow Us</h1></center>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="box4">
+            <center><h4>&copy; 2024 Staxel movies. All rights are reserved.
+Created by Kavuma Sudaisi
+            </center></footer>
+
+            </h4>
+            </div>
+                </div>
+    </div>
+    
+    
+   
+        
+    
+</body>
+</html>
